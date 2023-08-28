@@ -53,6 +53,7 @@ const Page = () => {
       </Head>
       <Box
         sx={{
+          backgroundColor: '#f8f7fc',
           flex: '1 1 auto',
           alignItems: 'center',
           display: 'flex',
@@ -64,13 +65,16 @@ const Page = () => {
             maxWidth: 550,
             px: 3,
             py: '100px',
-            width: '100%'
+            width: '100%',
+            backgroundColor: 'background.paper',
+            borderRadius: '10px',
           }}
         >
           <div>
             <Stack
               spacing={1}
               sx={{ mb: 3 }}
+              style={{ textAlign: 'center' }}
             >
               <Typography variant="h4">
                 Register

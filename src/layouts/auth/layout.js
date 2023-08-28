@@ -27,7 +27,7 @@ export const Layout = (props) => {
           sx={{
             alignItems: 'center',
             // background: 'radial-gradient(50% 50% at 50% 50%, #122647 0%, #090E23 100%)',
-            color: 'white',
+            color: 'black',
             display: 'flex',
             justifyContent: 'center',
             '& img': {

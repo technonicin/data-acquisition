@@ -1,6 +1,6 @@
 ## Quick start
 
-- repo: `git clone https://github.com/devias-io/material-kit-react.git`
+- repo: `git clone https://github.com/technonicin/data-acquisition.git`
 
 - Make sure your Node.js and npm versions are up to date for `React 18`
 
