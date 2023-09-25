@@ -1,6 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useCallback, useMemo } from 'react'
 import { useDropzone } from 'react-dropzone'
+import { useDispatch } from 'react-redux';
+import { uploadFile } from 'src/store/slice/commanSlice';
 
 const baseStyle = {
   flex: 1,
@@ -19,6 +21,8 @@ const baseStyle = {
 };
 function MyDropzone({ fileType, maxFiles }) {
 
+  const dispatch = useDispatch();
+
   const style = useMemo(() => ({
     ...baseStyle,
   }))
@@ -33,9 +37,11 @@ function MyDropzone({ fileType, maxFiles }) {
         // Do whatever you want with the file contents
         const binaryStr = reader.result
         console.log(binaryStr)
+        dispatch(uploadFile(file))
       }
       reader.readAsArrayBuffer(file)
     })
+    
 
   }, [])
   const { getRootProps, getInputProps } = useDropzone({ onDrop, maxFiles: maxFiles, accept: fileType })

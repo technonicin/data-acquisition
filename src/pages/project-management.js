@@ -5,6 +5,8 @@ import { Layout as DashboardLayout } from 'src/layouts/dashboard/layout';
 import { subDays, subHours } from 'date-fns';
 import ProjectManagementCard from 'src/components/ProjectManagement/ProjectManagementCard'
 import Breadcrumb from 'src/components/Breadcrumb';
+import ProjectManagementPopup from 'src/components/ProjectManagement/ProjectManagementPopup';
+
 
 const Page = () => {
   const [show, setShow] = useState(false);
@@ -29,7 +31,7 @@ const Page = () => {
         component="main"
         sx={{
           flexGrow: 1,
-          py: 8
+          py: 2
         }}
       >
 
@@ -87,9 +89,9 @@ const Page = () => {
         </Container>
 
       </Box>
-      {/* {show && <CreateUserPopup
-                show={show}
-                setShow={handleSetShow} />} */}
+      {show && <ProjectManagementPopup
+        show={show}
+        setShow={handleSetShow} />}
     </>
   )
 };

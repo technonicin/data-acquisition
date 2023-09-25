@@ -1,13 +1,13 @@
 import NextLink from 'next/link';
 import { usePathname } from 'next/navigation';
 import PropTypes from 'prop-types';
-import ArrowTopRightOnSquareIcon from '@heroicons/react/24/solid/ArrowTopRightOnSquareIcon';
-import ChevronUpDownIcon from '@heroicons/react/24/solid/ChevronUpDownIcon';
+import Bars3Icon from '@heroicons/react/24/solid/Bars3Icon';
 import {
   Box,
   Button,
   Divider,
   Drawer,
+  IconButton,
   Stack,
   SvgIcon,
   Typography,
@@ -59,8 +59,15 @@ export const SideNav = (props) => {
               Data ACQ
             </Typography>
 
+
+
             {/* <Logo /> */}
           </Box>
+          <IconButton onClick={onClose}>
+            <SvgIcon fontSize="small">
+              <Bars3Icon />
+            </SvgIcon>
+          </IconButton>
         </Box>
         <Divider sx={{ borderColor: 'neutral.700' }} />
         <Box

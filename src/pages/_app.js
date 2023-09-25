@@ -11,7 +11,7 @@ import { createEmotionCache } from 'src/utils/create-emotion-cache';
 import 'simplebar-react/dist/simplebar.min.css';
 import { Provider } from 'react-redux';
 import store from '../store';
-
+import "./stepper.css";
 const clientSideEmotionCache = createEmotionCache();
 
 const SplashScreen = () => null;

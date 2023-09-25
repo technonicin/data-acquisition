@@ -1,7 +1,7 @@
 import React from 'react'
 import TrashIcon from '@heroicons/react/24/outline/TrashIcon'
 import EllipsisVerticalIcon from '@heroicons/react/24/solid/EllipsisVerticalIcon'
-import { Box, Button, Card, CardActions, CardContent, SvgIcon, Typography, Unstable_Grid2 as Grid, AvatarGroup, Avatar, Chip, Link, } from '@mui/material'
+import { Box, Button, Card, CardActions, CardContent, SvgIcon, Typography, Unstable_Grid2 as Grid, AvatarGroup, Avatar, Chip, Link, IconButton, } from '@mui/material'
 import { SeverityPill } from 'src/components/severity-pill';
 const avatar = '/assets/avatars/avatar-anika-visser.png'
 function ProjectManagementCard({ handleEditClick, handleDeleteClick }) {
@@ -23,11 +23,18 @@ function ProjectManagementCard({ handleEditClick, handleDeleteClick }) {
                 justifyContent: 'space-between',
               }}
             >
+              <div sx={{ alignItems: 'center' }}>
+                <Box
+                  component="img"
+                  src={avatar}
+                  sx={{
+                    borderRadius: 1,
+                    height: 48,
+                    width: 48
+                  }}
+                />
+              </div>
 
-              <img
-                src={avatar}
-                alt="logo"
-height={50} />
 
               <div>
                 <SeverityPill color='success'>
@@ -43,7 +50,8 @@ height={50} />
                 </Typography>
               </div>
 
-              <SvgIcon fontSize="small">
+
+              <SvgIcon sx={{ alignItems: 'baseline' }}>
                 <EllipsisVerticalIcon />
               </SvgIcon>
 

@@ -39,7 +39,7 @@ function RoleManagementCard({ openRolePopup }) {
             >
               <Typography gutterBottom
                 variant="h6" >
-                total users - 15
+                Total Users - 15
               </Typography>
             </Grid>
             <Grid
@@ -55,7 +55,6 @@ function RoleManagementCard({ openRolePopup }) {
                   src={user.avatar}
                   sx={{
                     height: 25,
-                    mb: 2,
                     width: 25
                   }}
                 />
@@ -63,7 +62,6 @@ function RoleManagementCard({ openRolePopup }) {
                   src={user.avatar}
                   sx={{
                     height: 25,
-                    mb: 2,
                     width: 25
                   }}
                 />
@@ -71,7 +69,6 @@ function RoleManagementCard({ openRolePopup }) {
                   src={user.avatar}
                   sx={{
                     height: 25,
-                    mb: 2,
                     width: 25
                   }}
                 />
@@ -79,7 +76,6 @@ function RoleManagementCard({ openRolePopup }) {
                   src={user.avatar}
                   sx={{
                     height: 25,
-                    mb: 2,
                     width: 25
                   }}
                 />
@@ -90,7 +86,7 @@ function RoleManagementCard({ openRolePopup }) {
               md={6}
             >
               <Typography gutterBottom
-                variant="h6" >
+                variant="h5" >
                 Super Admin
               </Typography>
             </Grid>
@@ -171,7 +167,7 @@ function RoleManagementCard({ openRolePopup }) {
           </Grid>
         </Box>
       </CardContent>
-      <CardActions sx={{ justifyContent: 'center' }}>
+      <CardActions sx={{ justifyContent: 'center', padding: 0 }}>
         <Button
           variant="text"
           size="small"

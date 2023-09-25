@@ -12,11 +12,12 @@ function Breadcrumb({ title, handleAddClick, handleReloadClick }) {
       justifyContent="space-between"
       spacing={4}
       padding={1}
-      style={{ backgroundColor: '#ffffff' }}
+      style={{ backgroundColor: '#ffffff', borderTop: '1px solid #d5d5d5', boxShadow: '0px 10px 10px #00000014' }}
     >
       <Stack spacing={1}>
         <Typography variant="h5">
-          <SvgIcon fontSize="small">
+          <SvgIcon fontSize="small"
+            sx={{ marginRight: 1 }}>
             <ArrowLeftIcon />
           </SvgIcon>
           {title}
@@ -26,6 +27,7 @@ function Breadcrumb({ title, handleAddClick, handleReloadClick }) {
         direction="row"
         spacing={1}>
         <Button
+          size="small"
           startIcon={(
             <SvgIcon fontSize="small">
               <ArrowPathIcon />
@@ -38,6 +40,7 @@ function Breadcrumb({ title, handleAddClick, handleReloadClick }) {
           Reload
         </Button>
         <Button
+          size="small"
           startIcon={(
             <SvgIcon fontSize="small">
               <PlusIcon />
